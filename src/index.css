@@ -1,0 +1,18 @@
+
+/* esse arquivo é para uso de CSS global*/
+body{
+  padding: 50px;
+  padding-bottom: 500px;
+  background-color: #EFEFEF;
+}
+
+
+h1{           /* estilos globais  quer dizer que todos elementos h1 tera esse estilo */
+color:#333;
+}
+
+
+p{            /* estilos globais quer dizer que todos elementos p tera esse estilo */
+  background-color: #999;
+  padding: 10px;
+}

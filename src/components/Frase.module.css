@@ -1,0 +1,14 @@
+
+/* Arquivo criado para uso de css de forma especifica para cada componente*/
+/* É necessario importar esse arquivo css no arquivo que vai ser utilizado*/
+/* classe do css nao pode ser separada por- , apenas por _ ou camelCase  por motivos de existir erro no React*/
+.fraseContainer{ /* referente a div que esta encapsulando a frase dentro no arquivo Frase.js*/
+    background-color: #333;
+    border: 1px solid #111;
+}
+
+.fraseContent{   /* referente ao conteudo da frase*/
+    color: #fff;
+    background-color: #28be15;
+    margin: 0;
+}
