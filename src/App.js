@@ -6,7 +6,13 @@ import Form from './components/Form';
 import OutraLista from './components/OutraLista';
 //import HelloWorld from './components/HelloWorld';
 //import SayMyName from './components/SayMyName';
+import {useState} from 'react'
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
+
+
 function App() {
+    const [nome, setNome] = useState()
 
     const meusItens = ['React','Vue','Angular'] //lista criada no proprio componente , mas pode vir de um servidor externo ou do servidor do BD
 
@@ -14,6 +20,10 @@ function App() {
   return (
 
     <div className="App"> {/*a tag div é usada para encapsular tudo*/}
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome}/>
+      {nome} {/* faz aparecer o nome digitado embaixo do input, pq? */}
+      <Saudacao nome={nome}/>
       <h1>Renderização de Listas</h1>
       <OutraLista itens={meusItens}/>
       <OutraLista itens={[]}/> {/*retorna lista vazia*/}
