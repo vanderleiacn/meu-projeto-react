@@ -23,8 +23,8 @@ function Condicional(){
                placeholder="Digite seu e-mail..." 
                onChange={(e) => setEmail(e.target.value)}
                />
-              <button type="submit" onClick={enviarEmail}> Enviar e-mail</button>
-              {userEmail && ( //renderização condicional uma forma de validação (se tiver valor no input do email retorne a msg a baixo)
+              <button type="submit" onClick={enviarEmail}> Enviar e-mail</button> {/*quando clica em enviar nao aparece no dev tools oq foi feito. pq? */}
+              {userEmail && ( //renderização condicional uma forma de validação (se tiver valor no input do email imprima a msg a baixo)
                 <div>
                     <p>O e-mail do usuario é: {userEmail}</p>
                     <button onClick={limparEmail}>Limpar e-mail</button>
